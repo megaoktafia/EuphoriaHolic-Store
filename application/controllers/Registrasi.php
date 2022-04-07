@@ -29,7 +29,7 @@ class Registrasi extends CI_Controller{
             );
 
             $this->db->insert('user', $data);
-            redirect('index.php/auth/login');
+            redirect('auth/login');
         }
     }
 }

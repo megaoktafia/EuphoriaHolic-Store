@@ -19,7 +19,7 @@
 
                                     <?php echo $this->session->flashdata('pesan') ?>
 
-                                    <form method="post" action="<?php echo base_url('index.php/auth/login') ?>"class="user">
+                                    <form method="post" action="<?php echo base_url('auth/login') ?>"class="user">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -36,7 +36,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="<?php echo base_url('index.php/registrasi/index') ?>">Belum Punya Akun? Daftar!</a>
+                                        <a class="small" href="<?php echo base_url('registrasi/index') ?>">Belum Punya Akun? Daftar!</a>
                                     </div>
                                 </div>
                             </div>

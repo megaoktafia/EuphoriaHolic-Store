@@ -8,7 +8,7 @@ class Data_barang extends CI_Controller{
         if($this->session->userdata('role_id') != '1'){
             $this->session->set_flashdata('pesan','<div class="alert alert-warning alert-dismissible fade show" role="alert">Anda Belum Login!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>');
-            redirect('index.php/auth/login');
+            redirect('auth/login');
         }
 
     }
@@ -52,7 +52,7 @@ class Data_barang extends CI_Controller{
         );
 
         $this->ModelBarang->tambah_barang($data, 'barang');
-        redirect('index.php/admin/data_barang/index');
+        redirect('admin/data_barang/index');
     }
 
     public function edit($id)
@@ -86,13 +86,13 @@ class Data_barang extends CI_Controller{
         );
 
         $this->ModelBarang->update_data($where,$data, 'barang');
-        redirect('index.php/admin/data_barang/index');
+        redirect('admin/data_barang/index');
     }
 
     public function hapus ($id)
     {
         $where = array('id_brg' => $id);
         $this->ModelBarang->hapus_data($where, 'barang');
-        redirect('index.php/admin/data_barang/index');
+        redirect('admin/data_barang/index');
     }
 }

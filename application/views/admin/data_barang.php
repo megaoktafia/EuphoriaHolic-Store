@@ -23,8 +23,9 @@
             <td><?php echo $brg->kategori ?></td>
             <td><?php echo $brg->harga ?></td>
             <td><?php echo $brg->stok ?></td>
-            <td><?php echo anchor('index.php/admin/data_barang/edit/' .$brg->id_brg, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
-            <td><?php echo anchor('index.php/admin/data_barang/hapus/' .$brg->id_brg, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td>
+            <td><?php echo anchor('dashboard/detail/'. $brg->id_brg, '<div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div>') ?></td>
+            <td><?php echo anchor('admin/data_barang/edit/' .$brg->id_brg, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
+            <td><?php echo anchor('admin/data_barang/hapus/' .$brg->id_brg, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td>
         </tr>
 
         <?php endforeach ?>
@@ -43,7 +44,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="<?php echo base_url(). 'index.php/admin/data_barang/tambah_aksi' ?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi' ?>" method="post" enctype="multipart/form-data">
             
             <div class="form-group">
                 <label>Nama Barang</label>
@@ -57,6 +58,11 @@
                 <label>Kategori</label>
                 <select class="form-control" name="kategori">
                 <option>Pakaian Pria</option>
+                <option>T-Shirt Pria</option>
+                <option>Kemeja Pria</option>
+                <option>Jaket Pria</option>
+                <option>Hoodie Pria</option>
+                <option>Batik Pria</option>
                 <option>Pakaian Wanita</option>
                 </select>
             </div>
