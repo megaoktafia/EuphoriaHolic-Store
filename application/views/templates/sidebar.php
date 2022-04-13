@@ -7,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fab fa-shopify"></i>
                 </div>
@@ -29,9 +29,8 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Pakaian Pria
+                PAKAIAN PRIA
             </div>
-
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -64,9 +63,9 @@
                     <span>Batik Pria</span></a>
             </li>
 
-           <!-- Heading -->
-           <div class="sidebar-heading">
-                Pakaian Wanita
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                PAKAIAN WANITA
             </div>
 
 
