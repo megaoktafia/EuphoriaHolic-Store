@@ -151,7 +151,7 @@
                             <div class="topbar-divider d-none d-sm-block"></div>
 
                                 <ul class="na navbar-nav navbar-right">
-                                <li><div>Selamat Datang <b> <?php echo $this->session->userdata('username') ?> </b></div></li>
+                                <li><div> Selamat Datang <b> <?php echo $this->session->userdata('username') ?> </b></div></li>
                                     <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
                                 </ul>
 
