@@ -48,8 +48,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Pilih Bank</label>
+                    <label>Pilih Pembayaran</label>
                     <select class="form-control">
+                        <option>Cash On Delivery (COD)</option>
                         <option>BCA - 2XXXXX3</option>
                         <option>BNI - 3XXXXX4</option>
                         <option>BRI - 4XXXXX5</option>
